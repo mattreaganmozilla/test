@@ -25,6 +25,13 @@ alert("This is the second alert!");
 }
  </script> 
 
+<script> function twoAlertDelay(){ 
+ setTimeout(function(){
+alert("This is the first alert!");
+alert("This is the second alert!");
+}, 5000);
+ </script> 
+
 
 <script> function go4(){ 
  var x=window.open('about:blank'); 
@@ -34,6 +41,7 @@ alert("This is the second alert!");
  </script> 
 
 <button onclick="twoAlert()">two alerts</button>
+<button onclick="twoAlertDelay()">two alerts w/ delay</button>
  <button onclick="go()">broken</button>
 <button onclick="go2()">not broken</button>
 <button onclick="go3()">just initial alert</button>

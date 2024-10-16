@@ -19,13 +19,21 @@
   } 
  </script> 
 
+<script> function twoAlert(){ 
+alert("This is the first alert!");
+alert("This is the second alert!");
+}
+ </script> 
+
+
 <script> function go4(){ 
  var x=window.open('about:blank'); 
  setTimeout(function(){
  a=x.alert('Go to gmail.com');x.prompt('E-mail','');} ,1000);
   } 
  </script> 
- 
+
+<button onclick="twoAlert()">two alerts</button>
  <button onclick="go()">broken</button>
 <button onclick="go2()">not broken</button>
 <button onclick="go3()">just initial alert</button>
